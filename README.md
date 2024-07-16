@@ -33,13 +33,12 @@ For comprehensive information about the project, please refer to the [Documentat
 ![](https://github.com/thangarajarvind/Emotion-detection-to-upgrade-customer-experience/blob/main/Emotion_gif.gif)
 
 For a detailed demonstration of the project, please watch the [Demo Video](https://drive.google.com/file/d/144hzQKfIDB_q-VB_LpS7AcGKMOVKGapG/view?usp=sharing)
-## Support
-
-For support, email thangarajarvind@gmail.com or DM via [@Arvind Thangaraj](https://www.linkedin.com/in/arvind-thangaraj/)
-
 
 ## Lessons Learned
 
 To sum up the overall workflow of our project, the system starts with the user entering a query they are with in a form and submitting it. As the session starts the submitted query is pre-processed and sent to Long Short-Term Memory(LSTM) classifier. In the pre-processing stage, the text is cleaned removing punctuation and numbers. The pre-processed text is sent as input to the LSTM classifier to identify the emotion. The
 identified emotion is used as input to the call routing module which will identify the appropriate technical expert to solve the issue which in turn improves the customer experience. After the call is established, the speech signals are pre-processed and the required features are extracted and then sent to MLP classifier which does speech recognition and thus the system identifies the emotion of the customer for the clarification/service provided by the person and grades them automatically. In feature extraction, Mfcc, Mel, and Chroma features are extracted from the sound file and stored in hstack. From the data set, the required emotions are selected and the MLP model is trained using the features extracted. Hyper-parameters were tweaked to get higher accuracy. This classifier returns the emotion of the customer during the call at certain intervals which will be used in the Integration module to automatically grade the customer service personnel.
 
+## Support
+
+For support, email thangarajarvind@gmail.com or DM via [@Arvind Thangaraj](https://www.linkedin.com/in/arvind-thangaraj/)
