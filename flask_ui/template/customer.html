@@ -1,0 +1,29 @@
+<html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+
+<body>
+   <div class="form">
+      <form action="http://localhost:5000/customer-result" method="POST">
+         <div class="title">Welcome</div>
+         <div class="subtitle">Enter your query here for us to understand how you are feeling today!!!</div>
+         <div class="input-container ic1">
+            <input type="text" class="input" name="Enter text for Sentiment Analysis" />
+         </div>
+         <div>
+            <input type="submit" class="submit" value="submit" />
+         </div>
+      </form>
+      {% if counter>0 and sentiment_dict!=0 %}
+      <div class="result-container">
+         <!-- <h1>{{sentiment_dict['neg']}}</h1>
+         <h1>{{sentiment_dict['neu']}}</h1>
+         <h1>{{sentiment_dict['pos']}}</h1>
+         <h1>{{sentiment_dict['compound']}}</h1>
+         <h1>{{sentiment_dict['text']}}</h1> -->
+         <p>We understand that you are feeling <b>{{sentiment_dict}}</b>. Based on your need we have assigned our executive <b>{{exec[1]}} - {{exec[0]}}</b> </p>
+      </div>
+      {% endif %}
+   </div>
+</body>
+
+</html>

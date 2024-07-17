@@ -1,0 +1,15 @@
+<html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+
+<body>
+    <div class="form-index">
+        <div >
+            <a href="{{url_for('customer')}}"><button type="button" class="submit" name="Customer" >Customer</button></a>
+        </div>
+        <div >
+            <a href="{{url_for('service')}}"> <button type="button" class="submit" name="Service">Service</button></a>
+        </div>
+    </div>
+</body> 
+
+</html>
